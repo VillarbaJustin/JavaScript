@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>functions</title></head>
+<body>
+<script>
+function factorial(n) {
+  if(n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+document.body.textContent = `Factorial of 6 is ${factorial(6)}`;
+</script>
+</body>
+</html>

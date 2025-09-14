@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>scope</title></head>
+<body>
+<script>
+function outer() {
+  let outerVar = "outside";
+  function inner() {
+    let innerVar = "inside";
+    return `${outerVar} and ${innerVar}`;
+  }
+  return inner();
+}
+document.body.textContent = outer();
+</script>
+</body>
+</html>

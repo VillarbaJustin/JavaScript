@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Bulb Toggle</title></head>
+<body>
+<button id="toggleBtn">Turn On</button>
+<img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif">
+<script>
+const btn = document.getElementById("toggleBtn");
+const bulb = document.getElementById("bulb");
+let isOn = false;
+
+btn.addEventListener("click", () => {
+  isOn = !isOn;
+  bulb.src = isOn 
+    ? "https://www.w3schools.com/js/pic_bulbon.gif" 
+    : "https://www.w3schools.com/js/pic_bulboff.gif";
+  btn.textContent = isOn ? "Turn Off" : "Turn On";
+});
+</script>
+</body>
+</html>

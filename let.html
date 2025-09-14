@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>let Keyword</title>
+</head>
+<body>
+<h1>JavaScript let Keyword Example</h1>
+<div id="output"></div>
+
+<script>
+function demonstrateLet() {
+  let output = "";
+  for (let i = 0; i < 3; i++) {
+    output += `Inside loop: i = ${i}<br>`;
+  }
+  if (true) {
+    let blockVar = "I'm inside block";
+    output += blockVar + "<br>";
+  }
+  return output;
+}
+document.getElementById("output").innerHTML = demonstrateLet();
+</script>
+</body>
+</html>

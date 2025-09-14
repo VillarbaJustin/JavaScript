@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>callbacks</title></head>
+<body>
+<script>
+function greet(name, callback) {
+  callback(`Hello, ${name}!`);
+}
+greet("User", msg => document.body.textContent = msg);
+</script>
+</body>
+</html>

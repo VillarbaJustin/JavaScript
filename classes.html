@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>classes</title></head>
+<body>
+<script>
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    return `${this.name} makes a noise.`;
+  }
+}
+class Dog extends Animal {
+  speak() {
+    return `${this.name} barks.`;
+  }
+}
+const dog = new Dog("Rex");
+document.body.textContent = dog.speak();
+</script>
+</body>
+</html>

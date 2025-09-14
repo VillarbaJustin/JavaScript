@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>objects</title></head>
+<body>
+<script>
+const person = {
+  firstName: "Alice",
+  lastName: "Doe",
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+document.body.textContent = person.fullName();
+</script>
+</body>
+</html>

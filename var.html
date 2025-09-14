@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>var</title></head>
+<body>
+<script>
+var x = 10;
+function testVar() {
+  var x = 20;
+  if(true) {
+    var x = 30;
+  }
+  return x;
+}
+document.body.textContent = `Global x: ${x}, function x: ${testVar()}`;
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>datatypes</title></head>
+<body>
+<script>
+let values = [42, "string", true, null, undefined, {name:"JS"}, Symbol("id")];
+let types = values.map(v => typeof v);
+document.body.textContent = `Types: ${types.join(", ")}`;
+</script>
+</body>
+</html>
